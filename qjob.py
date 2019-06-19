@@ -74,9 +74,9 @@ ret = exact_eigensolver.run()
 print("The computed energy is: {:.12f}".format(ret['eigvals'][0].real))
 print("The total ground state energy is: {:.12f}".format(ret['eigvals'][0].real + energy_shift + nuclear_repulsion_energy))
 
-from qiskit import IBMQ
+#from qiskit import IBMQ
 #from qiskit.providers.ibmq import least_busy
-IBMQ.load_accounts()
+#IBMQ.load_accounts()
 #large_enough_devices = IBMQ.backends(filters=lambda x: x.configuration().n_qubits > 4 and not x.configuration().simulator)
 #backend = least_busy(large_enough_devices)
 
